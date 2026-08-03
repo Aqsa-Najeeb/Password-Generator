@@ -6,10 +6,27 @@ print("+========================================================+")
 print("|           P A S S W O R D  G E N E R A T O R           |")
 print("+========================================================+\n")
 
-passwordLength = int(input("\n>  What should the Password Length:  "))
+while True:
+    passwordLength = int(input("\n>  What should the Password Length:  "))
 
-includeNum = input("\n>  Should the Password include a Numeric Character (y/n):  ")
-includeChar = input("\n>  Should the Password include a Numeric Character (y/n):  ")
+    if passwordLength > 7:
+        break
+
+    print("Password lenght should be of 8 or above letters")
+
+while True:
+    includeNum = input("\n>  Should the Password include a Numeric Character (y/n):  ")
+
+    if includeNum =='y' or includeNum == 'n':
+        break
+
+    print("Enter 'y' or 'n' ")
+
+while True:
+    includeChar = input("\n>  Should the Password include a Special Character (y/n):  ")
+
+    if includeChar == 'y' or includeChar == 'n':
+        break
 
 Selection = ""   # including all the characters the password will be formed from
 
